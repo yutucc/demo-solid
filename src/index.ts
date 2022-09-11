@@ -4,6 +4,8 @@
  * @LastEditors: wuqinfa
  * @Description: 
  */
-export default (referProject, answerProject) => {
+import { Project } from '@/interface/project';
+
+export default (referProject: Project, answerProject: Project) => {
 
 };
