@@ -4,8 +4,22 @@
  * @LastEditors: wuqinfa
  * @Description: 
  */
-import { Project } from '@/interface/project';
+import { Blocks } from '@/interface/block';
 
-export default (referProject: Project, answerProject: Project) => {
+import * as data from '@/data';
+
+import matcher from '@/matcher';
+import Rope from '@/utils/rope';
+
+
+export default (referBlocks: Blocks, answerBlocks: Blocks) => {
+  const referRope = new Rope(referBlocks, '*sB)HodUVFs[3fs_m^e?');
+  const answerRope = new Rope(answerBlocks, 'nj9Unbj#GRR]!mL%)}:e');
+
+  const referConnections = referRope.getConnections();
+  const referBlockIds = referRope.getBlockIds();
+  const answerConnections = answerRope.getConnections();
+  const answerBlockIds = answerRope.getBlockIds();
+
 
 };
