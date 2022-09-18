@@ -32,13 +32,28 @@ export default (
     return false;
   }
 
-  // debugger
-
   targetKeys.forEach((targetKey, index) => {
     const otherKey = otherKeys[index];
 
-    // debugger;
+    // 简单粗暴，不用考虑什么设计原则，直接开干 ↓↓↓
+    // if (caseA(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
+    //   matchNum += 1;
+    //   return;
+    // }
+    // if (caseB(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
+    //   matchNum += 1;
+    //   return;
+    // }
+    // if (caseC(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
+    //   matchNum += 1;
+    //   return;
+    // }
+    // if (caseD(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
+    //   matchNum += 1;
+    //   return;
+    // }
 
+    // 考虑 SOLID 设计原则后的做法 ↓↓↓
     const targetTranslator = new Translator(targetKey as InputsAndFieldsKeyEnum, target[targetKey]);
     const otherTranslator = new Translator(otherKey as InputsAndFieldsKeyEnum, other[otherKey]);
 
@@ -56,26 +71,7 @@ export default (
       matchNum += 1;
       return;
     }
-
-    // if (caseA(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
-    //   matchNum += 1;
-    //   return;
-    // }
-    // if (caseB(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
-    //   matchNum += 1;
-    //   return;
-    // }
-    // if (caseC(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
-    //   matchNum += 1;
-    //   return;
-    // }
-    // if (caseD(target, other, targetBlockIds, otherBlockIds, targetKey, otherKey)) {
-    //   matchNum += 1;
-    //   return;
-    // }
   });
-
-  // debugger
 
   // inputs fields 中的所有元素都要匹配上才算匹配
   if (matchNum === targetKeys.length) {

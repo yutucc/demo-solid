@@ -22,7 +22,7 @@ class Rope {
     this.blocks = blocks;
     this.rootBlockId = rootBlockId;
 
-    this.iterator(this.rootBlockId);
+    this.iterator(this.rootBlockId); // 从代码块的根积木开始迭代代码块对象
   }
 
   getBlockIds() {

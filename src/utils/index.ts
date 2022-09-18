@@ -13,7 +13,7 @@
   ]
 */
 export const getInputAndFieldBlockId = (key: string, value: any) => {
-  if (key.includes('SUBSTACK') || key.includes('TO') || key.includes('DISTANCETOMENU')) {
+  if (key.includes('SUBSTACK') || key.includes('TO')) {
     return value[1];
   }
 };
