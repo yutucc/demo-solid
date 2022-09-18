@@ -73,7 +73,7 @@ export interface Block {
   readonly topLevel: boolean;
   readonly x?: number;
   readonly y?: number;
-  readonly id: string;
+  readonly id?: string;
 }
 
 export interface Blocks {

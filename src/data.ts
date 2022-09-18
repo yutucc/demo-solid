@@ -1,4 +1,6 @@
-export const refer = {
+import { Blocks } from '@/interface/block';
+
+export const refer: Blocks = {
   "*sB)HodUVFs[3fs_m^e?": {
       "opcode": "event_whenflagclicked",
       "next": "`F1go)C+@HGcN?g,MFpL",
@@ -78,7 +80,7 @@ export const refer = {
   }
 };
 
-export const target = {
+export const target: Blocks = {
   "nj9Unbj#GRR]!mL%)}:e": {
       "opcode": "event_whenflagclicked",
       "next": "?.?BtcgH=E7OORM0}Jit",
