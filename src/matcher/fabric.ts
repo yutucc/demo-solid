@@ -2,24 +2,11 @@
  * @Author: wuqinfa
  * @Date: 2022-09-08 15:55:20
  * @LastEditors: wuqinfa
- * @Description: 归纳每种数据结构的判同条件
+ * @Description: 简单粗暴，不用考虑什么设计原则，直接开干
+ * 
+ * 归纳每种数据结构的判同条件
  */
 import { InputsAndFields } from '@/interface/block';
-
-/*
-fabric1(模板，后续新增 case 可以按这个模板来)
-  数据结构如下：
-  判同条件：
-*/
-// export const fabric1 = (target: InputsAndFields, other: InputsAndFields, targetBlockIds: string[], otherBlockIds: string[], targetKey: string, otherKey: string) => {
-//   if (
-
-//   ) {
-//     return true;
-//   }
-
-//   return false;
-// }
 
 /*
 fabric1

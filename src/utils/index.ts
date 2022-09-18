@@ -4,22 +4,16 @@
  * @LastEditors: wuqinfa
  * @Description:
  */
-export const getRootBlockIds = (blocks) => {
-  const result: string[] = [];
 
-  for (const key in blocks) {
-    if (Object.hasOwnProperty.call(blocks, key)) {
-      const block = blocks[key];
-
-      if (!block.parent && !result.includes(key)) {
-        result.push(key);
-      }
-    }
+/*
+获取以下数据结构中的 积木 id （简单粗暴，不用考虑什么设计原则，直接开干）
+  "SUBSTACK": [
+    2,
+    "2dxV$n*C1TXVr@DuTZ)["
+  ]
+*/
+export const getInputAndFieldBlockId = (key: string, value: any) => {
+  if (key.includes('SUBSTACK') || key.includes('TO') || key.includes('DISTANCETOMENU')) {
+    return value[1];
   }
-
-  return result;
-};
-
-export const isBlockEqual = (target, other) => {
-  return target.opcode && other.opcode && target.opcode === other.opcode;
 };

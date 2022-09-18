@@ -2,32 +2,14 @@
  * @Author: wuqinfa
  * @Date: 2022-09-08 15:52:44
  * @LastEditors: wuqinfa
- * @Description: 归纳每种 key 会出现的所有数据结构
+ * @Description: 简单粗暴，不用考虑什么设计原则，直接开干
+ * 
+ * 归纳每种 key 会出现的所有数据结构
  *    详细说明请见以下 caseB 函数的注释
  */
 import { InputsAndFieldsKeyEnum, InputsAndFields } from '@/interface/block';
 
 import { fabric1, fabric2, fabric3 } from './fabric';
-
-/*
-caseA(模板，后续新增 case 可以按这个模板来)
-  数据结构如下：
-*/
-// export const caseA = (target: InputsAndFields, other: InputsAndFields, targetBlockIds: string[], otherBlockIds: string[], targetKey: string, otherKey: string) => {
-//   if (!(
-//     targetKey.includes(InputsAndFieldsKeyEnum.SUBSTACK)
-//   )) {
-//     return false
-//   }
-
-//   if (
-
-//   ) {
-//     return true;
-//   }
-
-//   return false;
-// }
 
 /*
 caseA

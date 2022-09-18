@@ -2,7 +2,9 @@
  * @Author: wuqinfa
  * @Date: 2022-09-09 16:54:09
  * @LastEditors: wuqinfa
- * @Description:
+ * @Description: 考虑 SOLID 设计原则后的做法
+ * 
+ * 归纳每种 key 会出现的所有数据结构，并且翻译每种数据结构中内容的值（积木 id or 内容值）
  */
 import isString from 'lodash.isstring';
 

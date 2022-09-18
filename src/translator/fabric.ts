@@ -2,7 +2,9 @@
  * @Author: wuqinfa
  * @Date: 2022-09-09 16:18:39
  * @LastEditors: wuqinfa
- * @Description:
+ * @Description: 考虑 SOLID 设计原则后的做法
+ * 
+ * 翻译每种数据结构下的内容
  */
 import isArray from 'lodash.isarray';
 

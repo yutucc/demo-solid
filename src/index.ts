@@ -21,7 +21,7 @@ const blockLint = (referBlocks: Blocks, answerBlocks: Blocks) => {
   const answerConnections = answerRope.getConnections();
   const answerBlockIds = answerRope.getBlockIds();
   let isAllMatch = true;
-debugger
+
   let refConnectionsIndex = 0;
   for (const refBlock of referConnections) {
     if (!matcher(refBlock, answerConnections[refConnectionsIndex], referBlockIds, answerBlockIds)) {
