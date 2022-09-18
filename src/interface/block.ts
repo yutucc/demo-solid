@@ -64,16 +64,16 @@ export interface InputsAndFields {
 }
 
 export interface Block {
-  readonly opcode: string;
-  readonly next: string | null;
-  readonly parent: string | null;
-  readonly inputs: InputsAndFields;
-  readonly fields: InputsAndFields;
-  readonly shadow: boolean;
-  readonly topLevel: boolean;
-  readonly x?: number;
-  readonly y?: number;
-  readonly id?: string;
+  readonly opcode: string; // opcode 可以理解成积木的类型
+  readonly next: string | null; // 下一个积木的 积木id
+  readonly parent: string | null; // 上一个积木的 积木id
+  readonly inputs: InputsAndFields; // 积木中包含的内容
+  readonly fields: InputsAndFields; // 积木中包含的内容（一共有 inputs 和 fields 两种类型的内容）
+  readonly shadow: boolean; // 是否处于 shadow 状态（对这次需求来说木有作用）
+  readonly topLevel: boolean; // 是否处于 topLevel 状态（对这次需求来说木有作用）
+  readonly x?: number; // 积木在画板中的 X 坐标（对这次需求来说木有作用）
+  readonly y?: number; // 积木在画板中的 Y 坐标（对这次需求来说木有作用）
+  readonly id?: string; // 积木id
 }
 
 export interface Blocks {
