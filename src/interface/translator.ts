@@ -15,7 +15,7 @@ import { InputsAndFieldsKeyEnum } from '@/interface/block';
 export type Content = string | number | undefined;
 
 export interface Translation {
-  key: InputsAndFieldsKeyEnum;
-  blockId: string | null;
-  value: string | number | null;
+  key: InputsAndFieldsKeyEnum; // inputs 或 fields 的 key （类型）
+  blockId: string | null; // inputs 或 fields 里面的下一个积木的 积木 id
+  value: string | number | null; // inputs 或 fields 里面的具体的值
 }
